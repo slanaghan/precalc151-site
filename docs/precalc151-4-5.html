@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Function Transformations Exercises</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MAT 151: College Algebra with Trigonometry">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="precalc151.html"><span class="title">MAT 151: College Algebra with Trigonometry</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="function-transformations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="precalc151-4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="operations-on-rational-expressions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-3.html" class="internal"><span class="codenumber">0</span> <span class="title">MAT 103 Review</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="precalc151-3-2.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Review of Linear and Quadratic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-3.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Review of Linear and Quadratic Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="precalc151-3-4.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Review of Function Concepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-5.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Review of Function Concepts Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="review-of-exponential-functions-and-logarithms.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Review of Exponential Functions and Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-7.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Review of Exponential Functions and Logarithms Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="precalc151-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Rational and Other Functions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="families-of-functions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Families of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Families of Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="function-transformations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Transformations</span></a></div></li>
+<li class="toc-item toc-subsection active"><div class="toc-title-box"><a href="precalc151-4-5.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Transformations Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="operations-on-rational-expressions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Operations on Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-7.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Operations on Rational Expressions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rational-functions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Rational Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-9.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Rational Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-rational-equations.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Solving Rational Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-11.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Solving Rational Equations Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-5.html" class="internal"><span class="codenumber">2</span> <span class="title">Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="angles-and-circles.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Angles and Circles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-3.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Angles and Circles Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="right-triangle-trigonometry.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Right Triangle Trigonometry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-5.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Right Triangle Trigonometry Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="the-unit-circle-and-trigonometric-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Unit Circle and Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-7.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Unit Circle and Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="evaluating-trigonometric-functions.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Evaluating Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-9.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Evaluating Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="coordinating-period-amplitude-and-midline.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Coordinating Period, Amplitude, and Midline</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-11.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Coordinating Period Amplitude and Midline Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Trigonometric Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="inverse-trigonometric-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Inverse Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-6-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Inverse Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-trigonometric-equations.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Trigonometric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-6-5.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Trigonometric Equations Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-7.html" class="internal"><span class="codenumber">4</span> <span class="title">Problem Solving with Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="modeling-with-trigonometric-functions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Modeling with Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-7-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Modeling with Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="the-law-of-sines-and-law-of-cosines.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Law of Sines and Law of Cosines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-7-5.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Law of Sines and Law of Cosines Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-8.html" class="internal"><span class="codenumber">5</span> <span class="title">Trigonometric Identities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="trigonometric-identities.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Trigonometric Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-3.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Trigonometric Identities Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="more-trigonometric-identities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">More Trigonometric Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-5.html" class="internal"><span class="codenumber">5.2</span> <span class="title">More Trigonometric Identities Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-trigonometric-equations-using-identities.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Solving Trigonometric Equations Using Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-7.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Solving Trigonometric Equations Using Identities Exercises</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="subsection" id="precalc151-4-5"><h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Function Transformations Exercises</span>
+</h2>
+<div class="para logical" id="precalc151-4-5-2">
+<ol class="decimal" id="precalc151-4-5-2-1">
+<li id="precalc151-4-5-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-1-1">Cell phones begin to lose (resale) value immediately after purchase. After one year, an iPhone can be resold at 63% of its list price. Assume that each year after that, the resale value continues to drop to 63% of the resale price from the previous year.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-1-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-1-2-1">
+<li id="precalc151-4-5-2-1-1-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-1-2-1-1-1">Assuming the list price of an iPhone is $649, write an exponential model for the resale price, <span class="process-math">\(P(t)\text{,}\)</span> of an iPhone <span class="process-math">\(t\)</span> <em class="emphasis">months</em> after purchase.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#precalc151-4-5-2-1-1-2-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-1-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-1-2-1-2-1">According to your model, what is the resale value of the iPhone after 18 months?<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#precalc151-4-5-2-1-1-2-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-1-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-1-2-1-3-1">According to your model, when is the resale value of the iPhone $150?<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#precalc151-4-5-2-1-1-2-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-1-2-1-4">
+<div class="para" id="precalc151-4-5-2-1-1-2-1-4-1">Assume that a particular Android phone has a value, <span class="process-math">\(A(t)\text{,}\)</span> that is always $100 less than the iPhone. Write <span class="process-math">\(A(t)\)</span> as a composition of <span class="process-math">\(P(t)\)</span> and another function, <span class="process-math">\(h(t)\text{,}\)</span> so that <span class="process-math">\(A(t)=h(P(t))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#precalc151-4-5-2-1-1-2-1-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-1-2-1-5">
+<div class="para" id="precalc151-4-5-2-1-1-2-1-5-1">Another smartphone has a value, <span class="process-math">\(V(t)\text{,}\)</span> that is always one half of the value of the iPhone. Write <span class="process-math">\(V(t)\)</span> as a transformation of <span class="process-math">\(P(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#precalc151-4-5-2-1-1-2-1-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#precalc151-4-5-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-2-1">Refer to the function <span class="process-math">\(p(x)=x^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-2-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-2-2-1">
+<li id="precalc151-4-5-2-1-2-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-2-2-1-1-1">Suppose <span class="process-math">\(r(x)= p(x+2)-3\text{.}\)</span> Describe how <span class="process-math">\(p(x)\)</span> is transformed to create <span class="process-math">\(r(x)\text{.}\)</span> Verify your description by graphing using Desmos.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#precalc151-4-5-2-1-2-2-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-2-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-2-2-1-2-1">Suppose <span class="process-math">\(q(x)= -p(x-2)+5\text{.}\)</span> Describe how <span class="process-math">\(p(x)\)</span> is transformed to create <span class="process-math">\(q(x)\text{.}\)</span> Verify your description by graphing using Desmos.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#precalc151-4-5-2-1-2-2-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-2-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-2-2-1-3-1">Suppose <span class="process-math">\(u(x)\)</span> is created by shifting <span class="process-math">\(p(x)\)</span> 3 units to the right and 4 units down. Write <span class="process-math">\(u(x)\)</span> in terms of <span class="process-math">\(p(x)\text{,}\)</span> and then find an algebraic expression for <span class="process-math">\(u(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#precalc151-4-5-2-1-2-2-1-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-2-2-1-4">
+<div class="para" id="precalc151-4-5-2-1-2-2-1-4-1">Suppose <span class="process-math">\(v(x)\)</span> is created by compressing <span class="process-math">\(p(x)\)</span> vertically by a factor of 5, and shifting 4 units up. Write <span class="process-math">\(v(x)\)</span> in terms of <span class="process-math">\(p(x)\text{,}\)</span> and then find an algebraic expression for <span class="process-math">\(v(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#precalc151-4-5-2-1-2-2-1-4" title="Copy heading and permalink for Item 2.d" aria-label="Copy heading and permalink for Item 2.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#precalc151-4-5-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-3-1">Refer to the functions <span class="process-math">\(f(x)=2^x\)</span> and <span class="process-math">\(g(x)=3\cdot 2^x-7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-3-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-3-2-1">
+<li id="precalc151-4-5-2-1-3-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-3-2-1-1-1">Describe <span class="process-math">\(g(x)\)</span> as a transformation of <span class="process-math">\(f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#precalc151-4-5-2-1-3-2-1-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-3-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-3-2-1-2-1">Find a function <span class="process-math">\(h(x)\)</span> so that <span class="process-math">\(g(x)=h(f(x))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#precalc151-4-5-2-1-3-2-1-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#precalc151-4-5-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-4">
+<div class="para" id="precalc151-4-5-2-1-4-1">Consider the functions <span class="process-math">\(k(x)=8^x\)</span> and <span class="process-math">\(m(x)=4\cdot 2^x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-4-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-4-2-1">
+<li id="precalc151-4-5-2-1-4-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-4-2-1-1-1">Are <span class="process-math">\(k(x)\)</span> and <span class="process-math">\(m(x)\)</span> the same function? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.a"><a href="#precalc151-4-5-2-1-4-2-1-1" title="Copy heading and permalink for Item 4.a" aria-label="Copy heading and permalink for Item 4.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-4-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-4-2-1-2-1">Write <span class="process-math">\(m(x)\)</span> as a composition of <span class="process-math">\(f(x)=2^x\)</span> and another function <span class="process-math">\(b(x)\text{,}\)</span> so that <span class="process-math">\(m(x)=b(f(x))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.b"><a href="#precalc151-4-5-2-1-4-2-1-2" title="Copy heading and permalink for Item 4.b" aria-label="Copy heading and permalink for Item 4.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-4-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-4-2-1-3-1">Write <span class="process-math">\(k(x)\)</span> as a composition of <span class="process-math">\(f(x)=2^x\)</span> and another function <span class="process-math">\(d(x)\text{,}\)</span> so that <span class="process-math">\(k(x)=d(f(x))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-4-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.c"><a href="#precalc151-4-5-2-1-4-2-1-3" title="Copy heading and permalink for Item 4.c" aria-label="Copy heading and permalink for Item 4.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#precalc151-4-5-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5">
+<div class="para" id="precalc151-4-5-2-1-5-1">For each graph given, (i) identify the function family (linear, quadratic, exponential, linear absolute value, reciprocal, square root, cubic), (ii) identify how the basic function has been transformed to produce the graph given, and (iii) write an equation of the graph.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-5-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-5-2-1">
+<li id="precalc151-4-5-2-1-5-2-1-1">
+<figure class="figure figure-like" id="logarithmic-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph1.png" class="contained" alt="A curve representing the function \(y = \sqrt(x - 4) + 2\text{.}\) The graph starts at the point (4, 2) and increases slowly as x moves to the right, passing through \((8,4)\text{.}\) The horizontal axis ranges approximately from -2 to 14, and the vertical axis ranges from -2 to 10."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.22"><a href="#logarithmic-graph-figure" title="Copy heading and permalink for Figure 1.2.22" aria-label="Copy heading and permalink for Figure 1.2.22">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.a"><a href="#precalc151-4-5-2-1-5-2-1-1" title="Copy heading and permalink for Item 5.a" aria-label="Copy heading and permalink for Item 5.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-2">
+<figure class="figure figure-like" id="absolute-value-shifted-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph2.png" class="contained" alt="A V-shaped graph representing the function \(y = |x - 3| - 2\text{.}\) The vertex is at (3, -2), with one ray extending upward to the right and the other upward to the left. The horizontal axis ranges approximately from -5 to 12, and the vertical axis from -4 to 10."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.23"><a href="#absolute-value-shifted-graph-figure" title="Copy heading and permalink for Figure 1.2.23" aria-label="Copy heading and permalink for Figure 1.2.23">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.b"><a href="#precalc151-4-5-2-1-5-2-1-2" title="Copy heading and permalink for Item 5.b" aria-label="Copy heading and permalink for Item 5.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-3">
+<figure class="figure figure-like" id="rational-function-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph3.png" class="contained" alt="A graph representing the function \(y = \dfrac{1}{x - 6}\text{.}\) The curve approaches a vertical asymptote at \(x = 6\) and a horizontal asymptote at \(y = 0\text{.}\) The graph decreases toward negative infinity as x approaches 6 from the left and increases toward positive infinity as x approaches 6 from the right. The axes range approximately from -5 to 12 horizontally and -4 to 12 vertically."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.24"><a href="#rational-function-graph-figure" title="Copy heading and permalink for Figure 1.2.24" aria-label="Copy heading and permalink for Figure 1.2.24">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.c"><a href="#precalc151-4-5-2-1-5-2-1-3" title="Copy heading and permalink for Item 5.c" aria-label="Copy heading and permalink for Item 5.c">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-4">
+<figure class="figure figure-like" id="increasing-line-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph4.png" class="contained" alt="A straight line with positive slope plotted on a coordinate grid. The line passes through points approximately \((2, -1)\text{,}\) \((4, 1)\text{,}\) and \((6, 3)\text{,}\) crossing the right half of the plane and trending upward. Axis markings shown from about -6 to 6 vertically and -6 to 7 horizontally."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.25"><a href="#increasing-line-graph-figure" title="Copy heading and permalink for Figure 1.2.25" aria-label="Copy heading and permalink for Figure 1.2.25">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.d"><a href="#precalc151-4-5-2-1-5-2-1-4" title="Copy heading and permalink for Item 5.d" aria-label="Copy heading and permalink for Item 5.d">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-5">
+<figure class="figure figure-like" id="cubic-function-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph5.png" class="contained" alt="A curve representing the function \(y = (x + 5)^3\) with an inflection point at \((-4, 1)\text{.}\) The graph decreases steeply for x less than -6, flattens near the inflection point, and then rises sharply for x greater than -3. The horizontal axis ranges approximately from -8 to 4, and the vertical axis from -6 to 8."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.26"><a href="#cubic-function-graph-figure" title="Copy heading and permalink for Figure 1.2.26" aria-label="Copy heading and permalink for Figure 1.2.26">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.e"><a href="#precalc151-4-5-2-1-5-2-1-5" title="Copy heading and permalink for Item 5.e" aria-label="Copy heading and permalink for Item 5.e">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-6">
+<figure class="figure figure-like" id="exponential-growth-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph6.png" class="contained" alt="A curve representing the function \(y = e^x\) or similar exponential growth. The graph passes through \((0, 1) \) and rises steeply for positive x-values. The horizontal axis ranges approximately from -6 to 4, and the vertical axis from -2 to 10. The curve approaches the x-axis for large negative x-values and increases rapidly for x greater than 1."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.27"><a href="#exponential-growth-graph-figure" title="Copy heading and permalink for Figure 1.2.27" aria-label="Copy heading and permalink for Figure 1.2.27">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.f"><a href="#precalc151-4-5-2-1-5-2-1-6" title="Copy heading and permalink for Item 5.f" aria-label="Copy heading and permalink for Item 5.f">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-5-2-1-7">
+<figure class="figure figure-like" id="upward-parabola-graph-figure"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/195-ExSet7-graph7.png" class="contained" alt="A parabola opening upward with its vertex at \((-2, 5)\text{.}\) The curve passes \((0, 9)\) on the y-axis, indicating a vertical shift above the origin. The visible window shows x-values approximately from -6 to 2 and y-values from 0 to 16."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 1.2.28"><a href="#upward-parabola-graph-figure" title="Copy heading and permalink for Figure 1.2.28" aria-label="Copy heading and permalink for Figure 1.2.28">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 5.g"><a href="#precalc151-4-5-2-1-5-2-1-7" title="Copy heading and permalink for Item 5.g" aria-label="Copy heading and permalink for Item 5.g">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#precalc151-4-5-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-6">
+<div class="para" id="precalc151-4-5-2-1-6-1">Consider the functions <span class="process-math">\(F(x)=\ln x\text{,}\)</span> <span class="process-math">\(G(x)=\ln (x-2)\text{,}\)</span> <span class="process-math">\(H(x)=\ln x - 2\text{,}\)</span> and <span class="process-math">\(J(x)=\ln (x+2)\text{.}\)</span> Describe <span class="process-math">\(G(x)\text{,}\)</span> <span class="process-math">\(H(x)\text{,}\)</span> and <span class="process-math">\(J(x)\)</span> as transformations of <span class="process-math">\(F(x)\text{.}\)</span> Do any of these functions have the exact same graph?<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#precalc151-4-5-2-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-7">
+<div class="para" id="precalc151-4-5-2-1-7-1">Refer to <span class="process-math">\(f\)</span> in <a href="precalc151-4-5.html#inverse-exer-f" class="xref" data-knowl="./knowl/xref/inverse-exer-f.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.2.29: f(x)">Table 1.2.29</a>.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="inverse-exer-f"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(f(x)\)</span><div class="autopermalink" data-description="Table 1.2.29: f(x)"><a href="#inverse-exer-f" title="Copy heading and permalink for Table 1.2.29: f(x)" aria-label="Copy heading and permalink for Table 1.2.29: f(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">0</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">1</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">3</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines"></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">-4</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><div class="para logical" id="precalc151-4-5-2-1-7-3">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-7-3-1">
+<li id="precalc151-4-5-2-1-7-3-1-1">
+<div class="para" id="precalc151-4-5-2-1-7-3-1-1-1">What are the domain and range of <span class="process-math">\(f\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-7-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7.a"><a href="#precalc151-4-5-2-1-7-3-1-1" title="Copy heading and permalink for Item 7.a" aria-label="Copy heading and permalink for Item 7.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-7-3-1-2">
+<div class="para" id="precalc151-4-5-2-1-7-3-1-2-1">Find a function table for the inverse function, <span class="process-math">\(f^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-7-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7.b"><a href="#precalc151-4-5-2-1-7-3-1-2" title="Copy heading and permalink for Item 7.b" aria-label="Copy heading and permalink for Item 7.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-7-3-1-3">
+<div class="para" id="precalc151-4-5-2-1-7-3-1-3-1">What are the domain and range of <span class="process-math">\(f^{-1}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-7-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7.c"><a href="#precalc151-4-5-2-1-7-3-1-3" title="Copy heading and permalink for Item 7.c" aria-label="Copy heading and permalink for Item 7.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#precalc151-4-5-2-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-8">
+<div class="para" id="precalc151-4-5-2-1-8-1">Allie is at the beach, and is hungry for a hot dog. Currently, she is standing 60 meters west of the boardwalk. Directly in front of her on the boardwalk, the nearest food vendor is her friend Carmen, who sells pizza. The hot dog vendor is 40 meters south of Carmen’s pizza stand. Allie plans to walk directly to the hot dog vendor.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-8-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-8-2-1">
+<li id="precalc151-4-5-2-1-8-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-8-2-1-1-1">Draw a diagram showing Allie’s path and impose coordinates on the diagram.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8.a"><a href="#precalc151-4-5-2-1-8-2-1-1" title="Copy heading and permalink for Item 8.a" aria-label="Copy heading and permalink for Item 8.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-8-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-8-2-1-2-1">Write an equation for the line that describes the Allie’s path.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8.b"><a href="#precalc151-4-5-2-1-8-2-1-2" title="Copy heading and permalink for Item 8.b" aria-label="Copy heading and permalink for Item 8.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-8-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-8-2-1-3-1">Write parametric equations to describe Allie’s position at time <span class="process-math">\(t\)</span> seconds, if it takes her 40 seconds to walk from her initial position to the hot dog vendor.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-8-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8.c"><a href="#precalc151-4-5-2-1-8-2-1-3" title="Copy heading and permalink for Item 8.c" aria-label="Copy heading and permalink for Item 8.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#precalc151-4-5-2-1-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-9">
+<div class="para" id="precalc151-4-5-2-1-9-1">The population of India by year is given in <a href="precalc151-4-5.html#india-pop" class="xref" data-knowl="./knowl/xref/india-pop.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.2.30: Population of India by year (Source: data.worldbank.org)">Table 1.2.30</a>. <figure class="table table-like" id="india-pop"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Population of India by year (Source: data.worldbank.org)<div class="autopermalink" data-description="Table 1.2.30: Population of India by year (Source: data.worldbank.org)"><a href="#india-pop" title="Copy heading and permalink for Table 1.2.30: Population of India by year (Source: data.worldbank.org)" aria-label="Copy heading and permalink for Table 1.2.30: Population of India by year (Source: data.worldbank.org)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b0 r0 l0 t0 lines">Year</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2000</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2003</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2006</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2009</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2012</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Pop. (millions)</td>
+<td class="c m b0 r0 l0 t0 lines">1053.5</td>
+<td class="c m b0 r0 l0 t0 lines">1108.4</td>
+<td class="c m b0 r0 l0 t0 lines">1162.1</td>
+<td class="c m b0 r0 l0 t0 lines">1214.2</td>
+<td class="c m b0 r0 l0 t0 lines">1263.6</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="precalc151-4-5-2-1-9-2">
+<ol class="lower-alpha lower-alpha-level-1" id="precalc151-4-5-2-1-9-2-1">
+<li id="precalc151-4-5-2-1-9-2-1-1">
+<div class="para" id="precalc151-4-5-2-1-9-2-1-1-1">Use the population in 2000 and 2012 to build an exponential model, <span class="process-math">\(P(t)\text{,}\)</span> for the number of millions of people in India, with <span class="process-math">\(t=0\)</span> corresponding to the year 2000.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9.a"><a href="#precalc151-4-5-2-1-9-2-1-1" title="Copy heading and permalink for Item 9.a" aria-label="Copy heading and permalink for Item 9.a">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-9-2-1-2">
+<div class="para" id="precalc151-4-5-2-1-9-2-1-2-1">Plot <span class="process-math">\(P(t)\)</span> and the data in <a href="precalc151-4-5.html#india-pop" class="xref" data-knowl="./knowl/xref/india-pop.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.2.30: Population of India by year (Source: data.worldbank.org)">Table 1.2.30</a> in Desmos. Discuss how well the model fits the data.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9.b"><a href="#precalc151-4-5-2-1-9-2-1-2" title="Copy heading and permalink for Item 9.b" aria-label="Copy heading and permalink for Item 9.b">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-9-2-1-3">
+<div class="para" id="precalc151-4-5-2-1-9-2-1-3-1">Use <span class="process-math">\(P(t)\)</span> to predict the population of India in 2014. Compare the result of the model with the actual population in 2014, which was 1295.3 million.<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9.c"><a href="#precalc151-4-5-2-1-9-2-1-3" title="Copy heading and permalink for Item 9.c" aria-label="Copy heading and permalink for Item 9.c">🔗</a></div>
+</li>
+<li id="precalc151-4-5-2-1-9-2-1-4">
+<div class="para" id="precalc151-4-5-2-1-9-2-1-4-1">Based on your model, when will the population of India reach 1400 million?<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9.d"><a href="#precalc151-4-5-2-1-9-2-1-4" title="Copy heading and permalink for Item 9.d" aria-label="Copy heading and permalink for Item 9.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2-1-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#precalc151-4-5-2-1-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#precalc151-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2: Function Transformations Exercises"><a href="#precalc151-4-5" title="Copy heading and permalink for Subsection 1.2: Function Transformations Exercises" aria-label="Copy heading and permalink for Subsection 1.2: Function Transformations Exercises">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="function-transformations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="operations-on-rational-expressions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

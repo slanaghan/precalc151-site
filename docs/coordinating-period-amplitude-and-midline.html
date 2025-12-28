@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Coordinating Period, Amplitude, and Midline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MAT 151: College Algebra with Trigonometry">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="precalc151.html"><span class="title">MAT 151: College Algebra with Trigonometry</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="precalc151-5-9.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="precalc151-5.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="precalc151-5-11.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-3.html" class="internal"><span class="codenumber">0</span> <span class="title">MAT 103 Review</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="precalc151-3-2.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Review of Linear and Quadratic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-3.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Review of Linear and Quadratic Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="precalc151-3-4.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Review of Function Concepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-5.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Review of Function Concepts Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="review-of-exponential-functions-and-logarithms.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Review of Exponential Functions and Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-3-7.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Review of Exponential Functions and Logarithms Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Rational and Other Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="families-of-functions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Families of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Families of Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="function-transformations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-5.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Transformations Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="operations-on-rational-expressions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Operations on Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-7.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Operations on Rational Expressions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="rational-functions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Rational Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-9.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Rational Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-rational-equations.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Solving Rational Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-4-11.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Solving Rational Equations Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="precalc151-5.html" class="internal"><span class="codenumber">2</span> <span class="title">Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="angles-and-circles.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Angles and Circles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-3.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Angles and Circles Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="right-triangle-trigonometry.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Right Triangle Trigonometry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-5.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Right Triangle Trigonometry Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="the-unit-circle-and-trigonometric-functions.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Unit Circle and Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-7.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Unit Circle and Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="evaluating-trigonometric-functions.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Evaluating Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-9.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Evaluating Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="coordinating-period-amplitude-and-midline.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Coordinating Period, Amplitude, and Midline</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-5-11.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Coordinating Period Amplitude and Midline Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Solving Trigonometric Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="inverse-trigonometric-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Inverse Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-6-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Inverse Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-trigonometric-equations.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Trigonometric Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-6-5.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Solving Trigonometric Equations Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-7.html" class="internal"><span class="codenumber">4</span> <span class="title">Problem Solving with Trigonometric Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="modeling-with-trigonometric-functions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Modeling with Trigonometric Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-7-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Modeling with Trigonometric Functions Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="the-law-of-sines-and-law-of-cosines.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Law of Sines and Law of Cosines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-7-5.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Law of Sines and Law of Cosines Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="precalc151-8.html" class="internal"><span class="codenumber">5</span> <span class="title">Trigonometric Identities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="trigonometric-identities.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Trigonometric Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-3.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Trigonometric Identities Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="more-trigonometric-identities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">More Trigonometric Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-5.html" class="internal"><span class="codenumber">5.2</span> <span class="title">More Trigonometric Identities Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="solving-trigonometric-equations-using-identities.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Solving Trigonometric Equations Using Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="precalc151-8-7.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Solving Trigonometric Equations Using Identities Exercises</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="coordinating-period-amplitude-and-midline"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coordinating Period, Amplitude, and Midline</span>
+</h2>
+<div class="para" id="coordinating-period-amplitude-and-midline-2">In this section, we revisit how to transform graphs of functions, now looking specifically at trigonometric functions.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-3">
+<ul class="disc" id="coordinating-period-amplitude-and-midline-3-1"><li id="coordinating-period-amplitude-and-midline-3-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-3-1-1-1">T: Be able to determine the equation of a trigonometric function given its graph.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#coordinating-period-amplitude-and-midline-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="coordinating-period-amplitude-and-midline-4"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-4-1">For a function <span class="process-math">\(f\text{,}\)</span> the <dfn class="terminology">period</dfn> is the smallest positive value <span class="process-math">\(t\)</span> such that for all <span class="process-math">\(x\)</span> in the domain, <span class="process-math">\(f(x+t)=f(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="coordinating-period-amplitude-and-midline-4-2">Informally, the period of a trigonometric function is the distance it takes to complete one cycle, before it begins to repeat.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.5.1"><a href="#coordinating-period-amplitude-and-midline-4" title="Copy heading and permalink for Definition 2.5.1" aria-label="Copy heading and permalink for Definition 2.5.1">🔗</a></div></article><article class="investigation project-like" id="coordinating-period-amplitude-and-midline-5"><h3 class="heading">
+<span class="type">Investigation</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-5-1">In Desmos, at: <a class="external" href="https://www.desmos.com/calculator/lujykscfnv" target="_blank">https://www.desmos.com/calculator/lujykscfnv</a>, you will find the following graphs: orange) <span class="process-math">\(y=a\sin(b(x-c))+d\text{,}\)</span> and purple) <span class="process-math">\(y=a\cos(b(x-c))+d\text{.}\)</span> You should have sliders for <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\text{.}\)</span> To begin, set <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=1\text{,}\)</span> <span class="process-math">\(c=0\text{,}\)</span> and <span class="process-math">\(d=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-5-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-5-2-1">
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-1">Understanding the cosine graph.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-5-2-1-1-2">
+<ol class="lower-alpha lower-alpha-level-1" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1">
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-1-1">Turn on the cosine graph (purple).<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-2-1">Let <span class="process-math">\(a=5\text{.}\)</span> How has the cosine changed compared to when <span class="process-math">\(a=1\text{?}\)</span> What specific part of the graph measures 5 units? This is called the <dfn class="terminology">amplitude</dfn>. Include a sketch that shows the amplitude.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-3">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-3-1">As you slide the value of <span class="process-math">\(b\text{,}\)</span> does the cosine wave (purple) change?<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="change-period1">
+<div class="para" id="change-period1-1">Set <span class="process-math">\(b=1\text{.}\)</span> On the cosine function, what is the interval starting from <span class="process-math">\(x=0\)</span> in order for the graph to make one complete cycle and return to its original starting position? (This is the period.)<div class="autopermalink" data-description="Paragraph"><a href="#change-period1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#change-period1" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5-1">Repeat <a href="coordinating-period-amplitude-and-midline.html#change-period1" class="xref" data-knowl="./knowl/xref/change-period1.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.d">Item 1.d</a> with <span class="process-math">\(b=4\text{,}\)</span> with <span class="process-math">\(b=2\text{,}\)</span> with <span class="process-math">\(b=2\pi\text{,}\)</span> <span class="process-math">\(b=\frac{\pi}{2}\text{,}\)</span> and with <span class="process-math">\(b=\frac{\pi}{4}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.5.2: "><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5-2" title="Copy heading and permalink for Table 2.5.2: " aria-label="Copy heading and permalink for Table 2.5.2: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b0 r0 l0 t0 lines"><span class="process-math">\(b\)</span></th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">1</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">2</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines">4</th>
+<th scope="col" class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2 \pi\)</span></th>
+<th scope="col" class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{\pi}{2}\)</span></th>
+<th scope="col" class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{\pi}{4}\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">period</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Item 1.e"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-6">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-6-1">You cannot directly see <span class="process-math">\(b\)</span> on the cosine wave. Instead, <span class="process-math">\(b\)</span> affects the period. If you know <span class="process-math">\(b\text{,}\)</span> how can you determine the period of the cosine wave? In reverse, if you know the cosine wave period, how can you find <span class="process-math">\(b\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.f"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-6" title="Copy heading and permalink for Item 1.f" aria-label="Copy heading and permalink for Item 1.f">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-7">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-7-1">Slide the value of <span class="process-math">\(c\text{.}\)</span> How does the cosine wave change?<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.g"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-7" title="Copy heading and permalink for Item 1.g" aria-label="Copy heading and permalink for Item 1.g">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-8">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-1-2-1-8-1">Slide the value of <span class="process-math">\(d\text{.}\)</span> How does the cosine wave change? The line <span class="process-math">\(y=d\)</span> is called the <dfn class="terminology">midline</dfn> of the cosine wave. Explain why this name is used.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.h"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2-1-8" title="Copy heading and permalink for Item 1.h" aria-label="Copy heading and permalink for Item 1.h">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-5-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-5-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-5-2-1-2-1">Understanding the sine graph.The constants <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\)</span> operate in the same way in the sine function, <span class="process-math">\(f(x)=a \sin(b(x-c)) + d\text{,}\)</span> but you begin with the base function <span class="process-math">\(f(x)= \sin(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-5-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 2.5.1"><a href="#coordinating-period-amplitude-and-midline-5" title="Copy heading and permalink for Investigation 2.5.1" aria-label="Copy heading and permalink for Investigation 2.5.1">🔗</a></div></article><article class="problem example-like" id="coordinating-period-amplitude-and-midline-6"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-6-1">Predict what each of the following graphs will look like and sketch. Use Desmos to check your answer. Be sure to label the amplitude, period, midline and endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-6-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-6-2-1">
+<li id="coordinating-period-amplitude-and-midline-6-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-6-2-1-1-1">
+<span class="process-math">\(y=2\cos(x-2 \pi)+3\)</span> on <span class="process-math">\(-2\pi \leq x \leq 2 \pi\)</span> <figure class="figure figure-like" id="coordinating-period-amplitude-and-midline-6-2-1-1-1-3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/wb24.png" class="contained" alt="A blank coordinate grid with the horizontal and vertical axes shown. The x-axis is labeled with tick marks at negative one, zero, one, two, and three. The y-axis is labeled with tick marks at negative ten, negative five, five, ten, fifteen, and twenty. The grid is intended for graphing functions or plotting points."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.4"><a href="#coordinating-period-amplitude-and-midline-6-2-1-1-1-3" title="Copy heading and permalink for Figure 2.5.4" aria-label="Copy heading and permalink for Figure 2.5.4">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-6-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-6-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-6-2-1-2-1">
+<span class="process-math">\(y=\cos(\pi x)-2\)</span> on <span class="process-math">\(-4 \leq x \leq 4\)</span> <figure class="figure figure-like" id="coordinating-period-amplitude-and-midline-6-2-1-2-1-3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/wb25.png" class="contained" alt="A blank coordinate grid with horizontal and vertical axes shown. The x-axis is labeled at negative four, negative two, zero, two, and four. The y-axis is labeled at two. The grid is intended for plotting points or sketching graphs."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.5: Blank Coordinate Grid"><a href="#coordinating-period-amplitude-and-midline-6-2-1-2-1-3" title="Copy heading and permalink for Figure 2.5.5: Blank Coordinate Grid" aria-label="Copy heading and permalink for Figure 2.5.5: Blank Coordinate Grid">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-6-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 2.5.3"><a href="#coordinating-period-amplitude-and-midline-6" title="Copy heading and permalink for Problem 2.5.3" aria-label="Copy heading and permalink for Problem 2.5.3">🔗</a></div></article><article class="problem example-like" id="coordinating-period-amplitude-and-midline-7"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-7-1">Predict what each of the following graphs will look like and sketch. Use Desmos to check your answer. Be sure to label the amplitude, period, midline and endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-7-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-7-2-1">
+<li id="coordinating-period-amplitude-and-midline-7-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-7-2-1-1-1">
+<span class="process-math">\(y=14\sin(2\pi x)+4\)</span> on <span class="process-math">\(-1 \leq x \leq 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="coordinating-period-amplitude-and-midline-7-2-1-1-2"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/wb24.png" class="contained" alt="A blank coordinate grid with both axes shown. The horizontal axis is labeled with integers from negative one to three. The vertical axis is labeled with values extending from negative ten up to twenty. Major grid lines appear at integer values with lighter minor grid lines between them."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.7"><a href="#coordinating-period-amplitude-and-midline-7-2-1-1-2" title="Copy heading and permalink for Figure 2.5.7" aria-label="Copy heading and permalink for Figure 2.5.7">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-7-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-7-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-7-2-1-2-1">
+<span class="process-math">\(y=-\frac{1}{2}\sin(\frac{\pi}{2}(x-1))+2\)</span> on <span class="process-math">\(-4 \leq x \leq 4\)</span> <figure class="figure figure-like" id="fig-blank-coordinate-grid-small"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/wb25.png" class="contained" alt="A blank coordinate grid with both axes shown. The horizontal axis is labeled from negative four to four, and the vertical axis is labeled up to two. Major grid lines appear at integer values, with lighter minor grid lines between them."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.8"><a href="#fig-blank-coordinate-grid-small" title="Copy heading and permalink for Figure 2.5.8" aria-label="Copy heading and permalink for Figure 2.5.8">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-7-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 2.5.6"><a href="#coordinating-period-amplitude-and-midline-7" title="Copy heading and permalink for Problem 2.5.6" aria-label="Copy heading and permalink for Problem 2.5.6">🔗</a></div></article><article class="problem example-like" id="coordinating-period-amplitude-and-midline-8"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-8-1">Refer to <a href="coordinating-period-amplitude-and-midline.html#trig-graph-1" class="xref" data-knowl="./knowl/xref/trig-graph-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.5.10: Graph f">Figure 2.5.10</a>. Note that <span class="process-math">\(P=(\frac{\pi}{4},-1)\text{,}\)</span> <span class="process-math">\(Q=(\frac{5\pi}{4}, -1)\text{,}\)</span> and <span class="process-math">\(R=(\frac{9\pi}{4},-1)\text{.}\)</span> <figure class="figure figure-like" id="trig-graph-1"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/trig-graph-sample-1.png" class="contained" alt="A graph of a periodic function on a coordinate grid. The horizontal axis is marked from approximately negative four to seven, and the vertical axis ranges from about negative eight to zero. Three points labeled P, Q, and R appear at successive peaks of the graph, evenly spaced along the horizontal axis."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.10: Graph f"><a href="#trig-graph-1" title="Copy heading and permalink for Figure 2.5.10: Graph f" aria-label="Copy heading and permalink for Figure 2.5.10: Graph f">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-8-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-8-2-1">
+<li id="coordinating-period-amplitude-and-midline-8-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-8-2-1-1-1">Write a function equation for <span class="process-math">\(f\)</span> of the form <span class="process-math">\(f(x)=a \sin (b(x-c))+d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-8-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-8-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-8-2-1-2-1">Write a function equation for <span class="process-math">\(f\)</span> of the form <span class="process-math">\(f(x)=a \cos (b(x-c))+d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-8-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 2.5.9"><a href="#coordinating-period-amplitude-and-midline-8" title="Copy heading and permalink for Problem 2.5.9" aria-label="Copy heading and permalink for Problem 2.5.9">🔗</a></div></article><article class="problem example-like" id="coordinating-period-amplitude-and-midline-9"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-9-1">Refer to <a href="coordinating-period-amplitude-and-midline.html#trig-graph-2" class="xref" data-knowl="./knowl/xref/trig-graph-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.5.12: Graph of f">Figure 2.5.12</a>. <figure class="figure figure-like" id="trig-graph-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/wb26.png" class="contained" alt="A graph of a periodic function drawn on a coordinate grid. The horizontal axis is labeled from approximately negative four to four, and the vertical axis ranges from about negative fourteen to six. The graph consists of repeating downward-opening parabolic arcs. Local maxima occur near x equals negative three, negative one, one, and three, with corresponding y-values near five. Local minima occur midway between these points at y-values near negative fourteen."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.12: Graph of f"><a href="#trig-graph-2" title="Copy heading and permalink for Figure 2.5.12: Graph of f" aria-label="Copy heading and permalink for Figure 2.5.12: Graph of f">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-9-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-9-2-1">
+<li id="coordinating-period-amplitude-and-midline-9-2-1-1">
+<div class="para" id="coordinating-period-amplitude-and-midline-9-2-1-1-1">Write a function equation for <span class="process-math">\(f\)</span> of the form <span class="process-math">\(f(x)=a \sin (b(x-c))+d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-9-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-9-2-1-2">
+<div class="para" id="coordinating-period-amplitude-and-midline-9-2-1-2-1">Write a function equation for <span class="process-math">\(f\)</span> of the form <span class="process-math">\(f(x)=a \cos (b(x-c))+d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-9-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 2.5.11"><a href="#coordinating-period-amplitude-and-midline-9" title="Copy heading and permalink for Problem 2.5.11" aria-label="Copy heading and permalink for Problem 2.5.11">🔗</a></div></article><article class="problem example-like" id="coordinating-period-amplitude-and-midline-10"><h3 class="heading">
+<span class="type">Problem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="coordinating-period-amplitude-and-midline-10-1">For each graph below, write a function either of the form <span class="process-math">\(f(x)=a \sin (b(x-c))+d\)</span> or <span class="process-math">\(f(x)=a \cos (b(x-c))+d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="coordinating-period-amplitude-and-midline-10-2">
+<ol class="decimal" id="coordinating-period-amplitude-and-midline-10-2-1">
+<li id="coordinating-period-amplitude-and-midline-10-2-1-1">
+<figure class="figure figure-like" id="cosine-shifted-graph"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/195-39.png" class="contained" alt="A graph of a trigonometric function drawn on a coordinate grid. The horizontal axis is labeled in radians and includes values such as negative six, negative four, negative two, zero, two, four, six, and eight. The vertical axis ranges approximately from zero at the top to negative two at the bottom. The graph has a maximum at \((-pi/2, 0)\) and another maximum at \((3pi/2, 0)\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.14"><a href="#cosine-shifted-graph" title="Copy heading and permalink for Figure 2.5.14" aria-label="Copy heading and permalink for Figure 2.5.14">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 1"><a href="#coordinating-period-amplitude-and-midline-10-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="coordinating-period-amplitude-and-midline-10-2-1-2">
+<figure class="figure figure-like" id="periodic-trig-graph"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/195-40.png" class="contained" alt="A graph of a periodic trigonometric function on a coordinate grid. The horizontal axis is marked with values including zero and five, and the vertical axis is marked with values including zero and negative five. The graph consists of repeating smooth curves with a maximum at \((0,3)\) and a minimum at \((1,-7)\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 2.5.15: Graph of a Periodic Trigonometric Function"><a href="#periodic-trig-graph" title="Copy heading and permalink for Figure 2.5.15: Graph of a Periodic Trigonometric Function" aria-label="Copy heading and permalink for Figure 2.5.15: Graph of a Periodic Trigonometric Function">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 2"><a href="#coordinating-period-amplitude-and-midline-10-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#coordinating-period-amplitude-and-midline-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Problem 2.5.13"><a href="#coordinating-period-amplitude-and-midline-10" title="Copy heading and permalink for Problem 2.5.13" aria-label="Copy heading and permalink for Problem 2.5.13">🔗</a></div></article><div class="autopermalink" data-description="Section 2.5: Coordinating Period, Amplitude, and Midline"><a href="#coordinating-period-amplitude-and-midline" title="Copy heading and permalink for Section 2.5: Coordinating Period, Amplitude, and Midline" aria-label="Copy heading and permalink for Section 2.5: Coordinating Period, Amplitude, and Midline">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="precalc151-5-9.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="precalc151-5-11.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
